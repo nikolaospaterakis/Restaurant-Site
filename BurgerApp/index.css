@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', system-ui;
+    
+} 
+
+
+header {
+    background-image: url("/images/burgerLogo.jpg");
+    background-position-y: 9cm;
+    background-size: cover;
+    color: #ffff;
+    padding: 50px;
+    font-size: 24px;
+    text-shadow: 2px 2px #3C3C3C;
+    animation: glow 4s infinite;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 0px 25px 10px 25px;
+    position: absolute;
+    height: 420px;
+    width: 400px;
+    top: 26%;
+    left: 8%;
+    text-align: center;
+    z-index: 3;
+    border: 1px solid black;
+}
+
+form h2 {
+    margin: 0px;
+}
+
+input {
+    padding: 10px;
+}
+
+p {
+    width: 180px;
+    margin: 50px auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* Classes */
+
+.section-item {
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+}
+
+.section-item:hover {
+    border-bottom: 1px solid #065F46;
+    border-top: 1px solid #065F46;
+}
+
+.sub-section-1 {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub-section-1 h1 {
+    font-size: 80px;
+    width: 140px;
+}
+
+.sub-section-2 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #DEDEDE;
+    color: #3C3C3C;
+    font-size: 25px;
+}
+
+.btm-section {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+    position: fixed;
+    bottom: 2%;
+    background-color: white;
+    padding: 0px 20px;
+    border-top: 2px solid black;
+}
+
+.btm-section h3 {
+    font-size: 22px;
+}
+
+.pay-btn {
+    padding: 15px;
+    margin-top: 20px;
+    color: white;
+    background-color: #16DB99;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.order-btn {
+    padding: 10px;
+    color: white;
+    background-color: #16DB99;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.items-ordered {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.items-ordered-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remove-btn {
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.item-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* ID's */
+
+
+#form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+#order-total-cost {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#close-btn {
+    position: relative;
+    left: 100%;
+    top: 2%;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    padding: 2px;
+    background: none;
+}
+
+#close-btn:hover {
+    color: #16DB99;
+}
+
+#love-msg {
+    color: #065F46;
+    padding: 20px;
+    background-color: #ECFDF5;
+    margin: 50px auto 0px auto;
+    width: 300px;
+}
+
+#rate {
+    margin:  50px auto;
+    width: 120px;
+    text-align: center;
+    border: 2px solid #003049;
+    padding: 0px 20px 25px 20px;
+}
+
+#rate-btn {
+    padding: 10px;
+    margin-top: 20px;
+    width: 100px;
+    border: none;
+    color: #ECFDF5;
+    background-color: #16DB99;
+}
+
+#rate-btn:hover {
+    color: #003049;
+}
+
+#mini {
+    position: relative;
+    bottom: 0%;
+    left: 47%;
+    font-size: 50px;
+    margin: 0px;
+}
+
+#mini:hover {
+    color: #16DB99;
+}
+
+
+/* Shared Classes 
+
+*/
+
+.light {
+    font-weight: lighter;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+/* Animations */
+
+@keyframes glow {
+    50% {text-shadow: 2px 2px red;}
+}
+

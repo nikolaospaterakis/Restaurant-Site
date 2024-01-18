@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <!--Font Awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h3>The best burgers and pizzas in town.</h3>
+        </header>
+        <main>
+            <section id="absolute-form" class="hidden">
+                <form action="" id="order-form">
+                    <button type="button" id="close-btn">X</button>
+                    <h2>Enter card details</h2>
+                    <div id="form-inputs">
+                        <input 
+                            id="name-input"
+                            name="name" 
+                            required 
+                            placeholder="Enter your name" 
+                            type="text"
+                        />
+                        <input 
+                            id="card-input" 
+                            name="card"  
+                            placeholder="Enter card number" 
+                            type="text"
+                            required
+                        />
+                        <input 
+                            id="cvv-input" 
+                            name="cvv" 
+                            placeholder="Enter CVV" 
+                            type="text"
+                            required
+                        />
+                    </div>
+                    <button type="submit" class="pay-btn" id="submit-btn">Pay</button>
+                </form>
+            </section>
+            <section id="section">
+
+            </section>
+            <section class="btm-section hidden" id="btm-section">
+                <h2 id="mini">-</h2>
+                <h3>Your order</h3>
+                <div id="order">
+                </div>
+                <div id="order-total-cost">
+                    <h3>Total price:</h3>
+                    <h4 id="total-cost">$0</h4>
+                </div>
+                <button class="order-btn" id="order-btn">Complete order</button>
+            </section>
+            <h2 class="hidden" id="love-msg"></h2>
+            <div id="rate" class="hidden">
+                <h2 id="rate-an">Rate us!</h2>
+                <div>
+                    <i class="fa-solid fa-star" id="1"></i>
+                    <i class="fa-solid fa-star" id="2"></i>
+                    <i class="fa-solid fa-star" id="3"></i>
+                    <i class="fa-solid fa-star" id="4"></i>
+                    <i class="fa-solid fa-star" id="5"></i>
+                </div>
+                <button id="rate-btn">Rate</button>
+            </div>
+            <p id="par"></p>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
